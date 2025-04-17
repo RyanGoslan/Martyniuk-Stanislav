@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма збору даних</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Форма збору даних</h1>
+        <form id="userForm">
+            <div class="form-group">
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="button-group">
+                <button type="submit" id="submitBtn">Відправити</button>
+                <button type="button" id="restoreBtn">Відновити останні дані</button>
+            </div>
+        </form>
+        <div id="responseMessage" class="response-message"></div>
+    </div>
+    <script src="koded.js"></script>
+</body>
